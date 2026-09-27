@@ -12,7 +12,7 @@ const App = () => {
   const getLocation = async ()=>{
     navigator.geolocation.getCurrentPosition(async pos => {
       const {latitude, longitude} = pos.coords
-      console.log(latitude, longitude)
+      // console.log(latitude, longitude)
 
       const url = `https://nominatim.openstreemmap.org/reverse?lat=${latitude}&long=${longitude}&format=json`
       try {
