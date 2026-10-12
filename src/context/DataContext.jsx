@@ -27,8 +27,9 @@ export const DataProvider = ({ children }) => {
         }
     
         const categoryOnlyData = getUniqueCategory(data, "category")
+        const brandOnlyData = getUniqueCategory(data, "brand")
     
-    return <DataContext.Provider value={{data,setData, fetchAllProducts, categoryOnlyData}}>
+    return <DataContext.Provider value={{data,setData, fetchAllProducts, categoryOnlyData, brandOnlyData}}>
         {children}
     </DataContext.Provider>
 }
